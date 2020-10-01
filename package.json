@@ -1,0 +1,22 @@
+{
+  "name": "superhero-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kluu1/superhero-api.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kluu1/superhero-api/issues"
+  },
+  "homepage": "https://github.com/kluu1/superhero-api#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
