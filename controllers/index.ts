@@ -36,7 +36,7 @@ module.exports = {
 
   appearance: async (req: any, res: any) => {
     const { id } = req.params;
-    const url = '`https://akabab.github.io/superhero-api/api/appearance/${id}.json';
+    const url = `https://akabab.github.io/superhero-api/api/appearance/${id}.json`;
 
     try {
       const request = await axios.get(url);
@@ -48,7 +48,7 @@ module.exports = {
 
   biography: async (req: any, res: any) => {
     const { id } = req.params;
-    const url = '`https://akabab.github.io/superhero-api/api/biography/${id}.json';
+    const url = `https://akabab.github.io/superhero-api/api/biography/${id}.json`;
 
     try {
       const request = await axios.get(url);
