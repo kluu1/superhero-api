@@ -8,5 +8,10 @@ module.exports = {
   parserOptions: {
     ecmaVersion: 12,
   },
-  rules: {},
+  rules: {
+    'strict': 'off',
+    'no-console': 'off',
+    'semi': ['error', 'always'],
+    'quotes': ['error', 'single']
+  },
 };
