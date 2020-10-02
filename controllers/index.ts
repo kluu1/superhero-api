@@ -57,4 +57,15 @@ module.exports = {
       throw new Error('Error fetching superheroes..');
     }
   },
+  work: async (req: any, res: any) => {
+    const { id } = req.params;
+    const url = `https://akabab.github.io/superhero-api/api/work/${id}.json`;
+
+    try {
+      const request = await axios.get(url);
+      res.json(request.data);
+    } catch (err) {
+      throw new Error('Error fetching superheroes..');
+    }
+  },
 };
