@@ -1,0 +1,13 @@
+{
+  "env": {
+    "commonjs": true,
+    "es6": true,
+    "node": true
+  },
+  "plugins": ["prettier"],
+  "extends": ["prettier", "airbnb-base"],
+  "rules": {
+    "prettier/prettier": "error",
+    "import/newline-after-import": "off"
+  }
+}
