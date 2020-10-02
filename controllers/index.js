@@ -1,10 +1,12 @@
+const axios = require('axios');
+
 module.exports = {
   all: async (req, res) => {
     try {
       const request = await axios.get('https://akabab.github.io/superhero-api/api/all.json');
       res.json(request.data);
     } catch (err) {
-      throw new Error('Error fetching superheroes..');
+      throw new Error(err);
     }
   },
 
@@ -16,7 +18,7 @@ module.exports = {
       const request = await axios.get(url);
       res.json(request.data);
     } catch (err) {
-      throw new Error('Error fetching superheroes..');
+      throw new Error(err);
     }
   }
 };
